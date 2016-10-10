@@ -1,11 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Author : Mohamed Saif Eldeen
 import sys,os,webbrowser,getpass,urllib,io
 from bs4 import BeautifulSoup
 from translate import Translator
 from imdbpie import Imdb
 fc = sys.argv[1]
+panum = len(sys.argv)
 if (fc == "hi"):
 	print("Hello "+getpass.getuser())
 elif (fc == "i"):
@@ -17,19 +17,34 @@ elif (fc == "good"):
 	else:
 		print(fc +" "+sys.argv[2]+" "+getpass.getuser())
 elif (fc == "youtube"):
-	url = "https://www.youtube.com/results?search_query="+sys.argv[2]
+	que = ""
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	url = "https://www.youtube.com/results?search_query="+que
 	webbrowser.open_new_tab(url)
 elif (fc == "google"):
-	url = "https://www.google.com/search?q="+sys.argv[2]
+	que = ""
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	url = "https://www.google.com/search?q="+que
 	webbrowser.open_new_tab(url)
 elif (fc == "github"):
-	url = "https://github.com/search?utf8=✓&q="+sys.argv[2]
+	que = ""
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	url = "https://github.com/search?utf8=✓&q="+que
 	webbrowser.open_new_tab(url)
 elif (fc == "twitter"):
-	url = "https://www.twitter.com/"+sys.argv[2]
+	que = ""
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	url = "https://www.twitter.com/"+que
 	webbrowser.open_new_tab(url)
 elif (fc == "sc"):
-	url = "https://soundcloud.com/search?q="+sys.argv[2]
+	que = ""
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	url = "https://soundcloud.com/search?q="+que
 	webbrowser.open_new_tab(url)
 elif (fc == "lyrics"):
 	url = "http://www.azlyrics.com/lyrics/"+sys.argv[2]+"/"+sys.argv[3]+".html"
@@ -57,7 +72,10 @@ elif (fc == "download"):
 elif (fc == "grab"):
 	print("Grabbing Entire Website Content For Offline Use ...")
 elif (fc == "nzli"):
-	os.system("youtube-dl "+sys.argv[2])
+	que = ""
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	os.system("youtube-dl "+que)
 elif (fc == "translate"):
 	translator= Translator(to_lang="ar")
 	translation = translator.translate(sys.argv[2])
@@ -96,10 +114,17 @@ elif (fc == "first"):
 			file.write("<?php echo \"Hello World !!\"?>")
 			os.system("sudo mv /home/$USERNAME/Project_stuffs/Sarah/first.php /var/www/html/first.php");
     			print(".php File Created Successfully , Navigate to http://localhost/first.php to See The Result")
+	elif(sys.argv[2] == "c#"):
+		with io.FileIO("first.cs", "w") as file:
+			file.write("class First {\n static void main () {\nSystem.Console.Write(\"Hello World\");\n}")
+    			print(".cs File Created Successfully , Check your Current Path")
 elif (fc == "run"):
 	os.system(sys.argv[2])
 elif (fc == "weather"):
-	os.system("curl wttr.in/"+sys.argv[2])
+	if len(sys.argv) < 3:
+		print("Usage : sara weather city \n ex: sara weather khartoum")
+	else:
+		os.system("curl wttr.in/"+sys.argv[2])
 elif (fc == "speedtest"):
 	os.system("speedtest")
 elif (fc =="koora"):
@@ -114,7 +139,28 @@ elif (fc == "how"):
 					utf8_text=open(sys.argv[6],'r+').read()
 					unicode_data = utf8_text.decode('utf8')
 					print len(unicode_data)
+elif (fc == "web"):
+	if (sys.argv[2] == "wordpress"):
+		print("Downloading Latest Version of Wordpress ...")
+		os.system("wget https://wordpress.org/latest.zip")
+		print("Extracting Zip Files ...")
+		os.system("unzip latest.zip")
+		print("Zip File Extracted Successfully")
+		pname = input_raw("Enter Project Name : ")
+		print("Moving Wordpress to /var/www/html/"+pname)
+		os.system("sudo cp -R latest /var/www/html/"+pname)
+		os.system("sudo chmod -R 777 /var/html/"+pname)
+		sqlname = input_raw("Enter MySQL Username : ")
+		sqlpass = input_raw("Enter MySQL Password : ")
+		db1 = MySQLdb.connect(host="localhost",user=sqlname,passwd=sqlpass)
+		cursor = db1.cursor()
+		sql = 'CREATE DATABASE word'
+		cursor.execute(sql)
+		print("Database Created Successfully ")
+		print("Editing Configuration File ")
+		
+		
 elif (fc == "help"):
-	print("* Available Commands For Sarah : \n 1- hi \n 2- youtube \n 3- google \n 4- twitter \n 5- time \n 6- download \n 7- grab \n 8- about \n 9- sc \n 10- nzli (to download youtube videos) \n 11- imdb \n 12- translate \n 13- speedtest")
+	print("* Available Commands For Sarah : \n 1- hi \n 2- youtube \n 3- google \n 4- twitter \n 5- time \n 6- download \n 7- grab \n 8- about \n 9- sc \n 10- nzli (to download youtube videos) \n 11- imdb \n 12- translate \n 13- speedtest \n 14- first \n")
 else :
 	print("Sorry I don't Know What you mean By ("+sys.argv[1]+") , Write sara help to list Available Commands")
