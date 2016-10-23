@@ -7,7 +7,7 @@ Sarah Use Your Username only no Personal Information Collected or Sent To Our Se
 Sarah Will Response to Your Greetings , Your Love , or Even Your Personal Questions about Her .<br /> Just Don't Be Rude ;)
 # Some Useful Sarah Commands with Outputs : <br />
 
-1- Get Movie or TV Show Information<br />
+1- Get Movie or TV Show Information<br /><br />
 <code>sarah watch titanic</code><br /><br />
 Output:<br /><br />
 Name : Titanic <br />
@@ -17,12 +17,12 @@ Genre : Drama, Romance<br />
 Cast : Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates<br />
 Ok I will watch it because it got 7.7 on imdb <br /><br />
 
-2- Get Lyrics of a Song <br />
+2- Get Lyrics of a Song <br /><br />
 <code>sarah lyrics majerlazor leanon</code><br /><br />
 output : <br /><br />
 This Command Will Output Major Lazor Song Lean on Lyrics<br /><br />
 
-3- Download File With Resume Ability Even if The Link Doesn't Support Resuming : <br />
+3- Download File With Resume Ability Even if The Link Doesn't Support Resuming : <br /><br />
 <code>sarah download http://anylink.com/anyfile.tar.gz</code><br /><br />
 
 4- Grabbing Entire Website Content For Offline Use <br /><br />
@@ -57,7 +57,7 @@ Output : <br /><br />
 34 <br /><br />
 
 Enjoy Your Friendship with Sarah <br /><br />
-Made With Love in Sudan 3><br /><br />
+Made With Love in Sudan &hearts; <br /><br />
 
 SemiCode OS Core Team<br />
 
