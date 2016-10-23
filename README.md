@@ -7,9 +7,9 @@ Sarah Use Your Username only no Personal Information Collected or Sent To Our Se
 Sarah Will Response to Your Greetings , Your Love , or Even Your Personal Questions about Her .<br /> Just Don't Be Rude ;)
 # Some Useful Sarah Commands with Outputs : <br />
 
-1- Get Movie or TV Show Information<br /><br />
+1- <b>Get Movie or TV Show Information</b><br /><br />
 <code>sarah watch titanic</code><br /><br />
-Output:<br /><br />
+<b>Output:</b><br /><br />
 Name : Titanic <br />
 Year of Releasing : 1997<br />
 Movie or Series : movie<br />
@@ -17,47 +17,47 @@ Genre : Drama, Romance<br />
 Cast : Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates<br />
 Ok I will watch it because it got 7.7 on imdb <br /><br />
 
-2- Get Lyrics of a Song <br /><br />
+2- <b>Get Lyrics of a Song </b><br /><br />
 <code>sarah lyrics majerlazor leanon</code><br /><br />
-output : <br /><br />
+<b>Output : </b><br /><br />
 This Command Will Output Major Lazor Song Lean on Lyrics<br /><br />
 
-3- Download File With Resume Ability Even if The Link Doesn't Support Resuming : <br /><br />
+3- <b>Download File With Resume Ability Even if The Link Doesn't Support Resuming :</b> <br /><br />
 <code>sarah download http://anylink.com/anyfile.tar.gz</code><br /><br />
 
-4- Grabbing Entire Website Content For Offline Use <br /><br />
+4- <b>Grabbing Entire Website Content For Offline Use </b><br /><br />
 <code>sarah grab http://www.w3schools.com</code> <br /><br />
 
-5- Downloading Youtube Video <br /><br />
+5- <b>Downloading Youtube Video </b><br /><br />
 <code>sarah nzli https://www.youtube.com/watch?v=7XTHdcmjenI</code><br /><br />
 
-6- Translate any English Word to Arabic Word <br /><br />
+6- <b>Translate any English Word to Arabic Word </b><br /><br />
 <code>sarah translate pencil</code><br /><br />
-Output: <br /><br />
+<b>Output:</b> <br /><br />
 قلم رصاص<br />
 <br />
-7- Get Small Bio of anyone You Want <br /><br />
+7- <b>Get Small Bio of anyone You Want</b> <br /><br />
 <code>sarah whois Adam Levine</code><br /><br />
-Output : <br /><br />
+<b>Output : </b><br /><br />
 Adam Noah Levine (born March 18, 1979) is an American singer-songwriter, multi-instrumentalist, and actor. <br />
 He is the lead vocalist for pop rock band Maroon 5.<br /><br />
-8- Generate Hello World Program in Any Programming Language <br /><br />
+8-<b> Generate Hello World Program in Any Programming Language </b><br /><br />
 <code>sarah first python</code><br /><br />
-Output : <br /><br />
+<b>Output : </b><br /><br />
 .py File Created Successfully , Check your Current Path <br /><br />
-9- Get The Weather of Specific City <br /><br />
+9- <b>Get The Weather of Specific City </b><br /><br />
 <code>sarah weather khartoum</code><br /><br />
-Output : <br /><br />
+<b>Output : </b><br /><br />
 Display The Tempreature and Weather Information of Khartoum City <br /><br />
-10- Test Your Internet Connecion Speed <br /><br />
+10- <b>Test Your Internet Connecion Speed </b><br /><br />
 <code>sarah speedtest</code><br /><br />
-11- Get Number of Characters in Any File <br /><br />
+11- <b>Get Number of Characters in Any File </b><br /><br />
 <code>sarah how many characters are in file.txt</code><br /><br />
-Output : <br /><br />
+<b>Output : </b><br /><br />
 34 <br /><br />
 
 Enjoy Your Friendship with Sarah <br /><br />
-Made With Love in Sudan &hearts; <br /><br />
+<b>Made With Love in Sudan &hearts; </b><br /><br />
 
 SemiCode OS Core Team<br />
 
