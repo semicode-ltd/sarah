@@ -155,13 +155,23 @@ elif (fc.lower() == "download"):
 	os.system("wget -c "+sys.argv[2])
 elif (fc.lower() == "grab"):
 	print("Grabbing Entire Website Content For Offline Use ...")
+	os.system("wget \
+     --recursive \
+     --no-clobber \
+     --page-requisites \
+     --html-extension \
+     --convert-links \
+     --restrict-file-names=windows \
+     --domains website.org \
+     --no-parent \
+     "+sys.argv[2])
 elif (fc == "nzli"):
 	que = ""
 	for i in range(2,len(sys.argv)):
 		que = que +" "+sys.argv[i]
 	os.system("youtube-dl "+que)
 elif (fc.lower() == "translate"):
-	translator= Translator(to_lang="ar")
+	translator = Translator(to_lang="ar")
 	translation = translator.translate(sys.argv[2])
 	print(translation)
 elif(fc.lower() == "whois"):
