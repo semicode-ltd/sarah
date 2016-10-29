@@ -1,6 +1,6 @@
 # Sarah 
 English-Like Assistant helps You to do almost Everything in SemiCode OS , Sarah is Your New Girl Friend &hearts;<br />She will take care of you ,
-help you in your work ,just open terminal from any where and call her . and she will be there for you 
+helps you in your work ,just open terminal from any where and call her . and she will be there for you 
 Sarah Support a large a Mount of Commands Can Be Listed With The Command :<br /><br />
 <code>sarah help</code><br /><br />
 Sarah Use Your Username only no Personal Information Collected or Sent To Our Servers So We Care about Your Privacy.<br />
