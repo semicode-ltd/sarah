@@ -76,8 +76,11 @@ elif (fc.lower() == "what"):
 						print("GTA V")
 		if(sys.argv[3] == "love"):
 			print("what is happiness?")
-		else:
-			print("I don't know , try : sarah google "+sys.argv[3])
+		if(sys.argv[3] == "my"):
+			if(sys.argv[4] == "ip"):
+				os.system("curl http://icanhazip.com");
+			if(sys.argv[5] == "name"):
+				os.system("whoami");
 	if(sys.argv[2] == "do"):
 		if(sys.argv[3] == "you"):
 			if(sys.argv[4] == "do"):
