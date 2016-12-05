@@ -79,7 +79,7 @@ elif (fc.lower() == "what"):
 		if(sys.argv[3] == "my"):
 			if(sys.argv[4] == "ip"):
 				os.system("curl http://icanhazip.com");
-			if(sys.argv[5] == "name"):
+			if(sys.argv[4] == "name"):
 				os.system("whoami");
 	if(sys.argv[2] == "do"):
 		if(sys.argv[3] == "you"):
