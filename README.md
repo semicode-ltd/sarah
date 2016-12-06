@@ -5,6 +5,11 @@ Sarah Support a large a Mount of Commands Can Be Listed With The Command :<br />
 <code>sarah help</code><br /><br />
 Sarah Use Your Username only no Personal Information Collected or Sent To Our Servers So We Care about Your Privacy.<br />
 Sarah Will Response to Your Greetings , Your Love , or Even Your Personal Questions about Her .<br /> Just Don't Be Rude ;)
+# Installation
+Collect all dependcies to run `Sarah` by executing <br />
+<code> $ sudo apt-get install python-pip </code> <br />
+<code> $ pip install -r requirements.txt </code>
+
 # Some Useful Sarah Commands with Outputs : <br />
 
 <b>Get Movie or TV Show Information</b><br /><br />

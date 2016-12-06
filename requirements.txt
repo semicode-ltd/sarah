@@ -1,0 +1,6 @@
+requests
+BeautifulSoup
+bs4
+translate
+omdb
+wikipedia
