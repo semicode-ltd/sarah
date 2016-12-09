@@ -6,6 +6,26 @@ from bs4 import BeautifulSoup
 from translate import Translator
 import omdb
 import wikipedia
+
+#Open Webpage Function
+def open_url(command):
+	que = ""
+	if (command == "youtube"):
+		url = "https://www.youtube.com/results?search_query="
+	elif (command == "google"):
+		url = "https://www.google.com/search?q="
+	elif (command == "github"):
+		url = "https://github.com/search?utf8=✓&q="
+	elif (command == "twitter"):
+		url = "https://www.twitter.com/"
+	elif (command == "sc" or command == "soundcloud"):
+		url = "https://soundcloud.com/search?q="
+	for i in range(2,len(sys.argv)):
+		que = que +" "+sys.argv[i]
+	url = url + que
+	webbrowser.open_new_tab(url)
+
+#Chat bot logic		
 panum = len(sys.argv)
 if(panum == 1):
 	print("Usage : sarah command")
@@ -100,36 +120,8 @@ elif(fc.lower() == "how"):
 			if(sys.argv[4].lower() == "your"):
 				if(sys.argv[5].lower() == "love"):
 					print("Is it like the ocean?")
-elif (fc.lower() == "youtube"):
-	que = ""
-	for i in range(2,len(sys.argv)):
-		que = que +" "+sys.argv[i]
-	url = "https://www.youtube.com/results?search_query="+que
-	webbrowser.open_new_tab(url)
-elif (fc.lower() == "google"):
-	que = ""
-	for i in range(2,len(sys.argv)):
-		que = que +" "+sys.argv[i]
-	url = "https://www.google.com/search?q="+que
-	webbrowser.open_new_tab(url)
-elif (fc.lower() == "github"):
-	que = ""
-	for i in range(2,len(sys.argv)):
-		que = que +" "+sys.argv[i]
-	url = "https://github.com/search?utf8=✓&q="+que
-	webbrowser.open_new_tab(url)
-elif (fc.lower() == "twitter"):
-	que = ""
-	for i in range(2,len(sys.argv)):
-		que = que +" "+sys.argv[i]
-	url = "https://www.twitter.com/"+que
-	webbrowser.open_new_tab(url)
-elif (fc.lower() == "sc"):
-	que = ""
-	for i in range(2,len(sys.argv)):
-		que = que +""+sys.argv[i]
-	url = "https://soundcloud.com/search?q="+que
-	webbrowser.open_new_tab(url)
+elif (fc.lower() == "youtube" or fc.lower() == "google" or fc.lower() == "github" or fc.lower() == "twitter" or fc.lower() == "sc" or fc.lower() == "soundcloud"):
+	open_url(fc.lower())
 elif(fc.lower() == "sorry"):
 	print("There's no need to apologize.")
 elif(fc.lower() == "bye"):
