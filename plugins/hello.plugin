@@ -1,6 +1,0 @@
-[Plugin]
-Module=hello
-Loader=C
-Name=hello
-Description=vala hello plugins
-
