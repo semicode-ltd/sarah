@@ -1,10 +1,10 @@
 FILES = main.vala
 
-all: sarahLib sarahApp sarahPlugins 
+all: sarahLib sarahApp sarahPlugins
 
 
 sarahApp:
-	valac  -o sarah  $(FILES)  --vapidir ./bin --pkg libpeas-1.0  --pkg sarah   -X -I./bin -X -L./bin -X  -lsarah -d ./bin
+	valac  -o sarah  $(FILES) -b .  --vapidir ./bin --pkg libpeas-1.0  --pkg sarah   -X -I./bin -X -L./bin -X  -lsarah -d ./bin
 
 
 sarahLib:
@@ -15,15 +15,15 @@ sarahLib:
 
 sarahPlugins:
 	valac -o libhello.so --library=hello  ./plugins/vala-extension.vala  -X -shared -X -fPIC   --vapidir ./bin --pkg sarah  --pkg libpeas-1.0  -X -I./bin -X -L./bin -X -lsarah -d ./bin/plugins
-	
+
 
 clean:
 	rm -rf *.vapi *.h *.so sarah
 	rm -rf ./bin
-	
+
 install:
-	cp ./plugins/*.py	  ./bin/plugins 
-	cp ./plugins/*.plugin ./bin/plugins 
+	cp ./plugins/*.py	  ./bin/plugins
+	cp ./plugins/*.plugin ./bin/plugins
 	cd ./bin
 	export LD_LIBRARY_PATH=.
 	export GI_TYPELIB_PATH=.
