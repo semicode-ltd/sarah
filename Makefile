@@ -14,7 +14,7 @@ sarahLib:
 
 
 sarahPlugins:
-	valac -o libhello.so --library=hello  ./plugins/vala-extension.vala  -X -shared -X -fPIC   --vapidir ./bin --pkg sarah  --pkg libpeas-1.0  -X -I./bin -X -L./bin -X -lsarah -d ./bin/plugins
+	valac -o libhello.so --library=hello  ./plugins/vala-extension-demo/vala-extension.vala  -X -shared -X -fPIC   --vapidir ./bin --pkg sarah  --pkg libpeas-1.0  -X -I./bin -X -L./bin -X -lsarah -d ./bin/plugins
 
 
 clean:
