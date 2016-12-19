@@ -22,8 +22,7 @@ clean:
 	rm -rf ./bin
 
 install:
-	cp ./plugins/*.py	  ./bin/plugins
-	cp ./plugins/*.plugin ./bin/plugins
+	cp  -rf ./plugins/*  ./bin/plugins/
 	cd ./bin
 	export LD_LIBRARY_PATH=.
 	export GI_TYPELIB_PATH=.
