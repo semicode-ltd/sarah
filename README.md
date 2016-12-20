@@ -1,3 +1,14 @@
+
+
+
+# Sarah
+Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS. Sarah is your new girlfriend &hearts;<br />She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
+Sarah supports a large amount of commands. They can be listed with the following command:<br /><br />
+<code>sarah help</code><br /><br />
+Sarah uses only your username. She won't collect any personal information or send them to our servers. So we care about your privacy.<br />
+Sarah will respond to your greetings, your love or even your personal questions about her.<br /> Just don't be rude ;)
+
+
 #Installing Sarah
 To install Sarah to ubuntu follow the commands below:
 
@@ -12,14 +23,6 @@ make install
 export LD_LIBRARY_PATH=.
 export GI_TYPELIB_PATH=.
 ./sarah <some command to run>
-
-
-# Sarah
-Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS. Sarah is your new girlfriend &hearts;<br />She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
-Sarah supports a large amount of commands. They can be listed with the following command:<br /><br />
-<code>sarah help</code><br /><br />
-Sarah uses only your username. She won't collect any personal information or send them to our servers. So we care about your privacy.<br />
-Sarah will respond to your greetings, your love or even your personal questions about her.<br /> Just don't be rude ;)
 
 # Some useful Sarah commands with their outputs: <br />
 
