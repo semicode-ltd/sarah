@@ -1,88 +1,127 @@
-
-
-
 # Sarah
-Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS. Sarah is your new girlfriend &hearts;<br />She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
-Sarah supports a large amount of commands. They can be listed with the following command:<br /><br />
-<code>sarah help</code><br /><br />
-Sarah uses only your username. She won't collect any personal information or send them to our servers. So we care about your privacy.<br />
-Sarah will respond to your greetings, your love or even your personal questions about her.<br /> Just don't be rude ;)
+
+Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS.
+
+Sarah is your new girl friend &hearts;
+
+She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
+Sarah supports a large amount of commands. They can be listed with the following command:
+
+```bash
+$ sarah help
+```
+
+Sarah uses only your username. She won't collect any personal information or send them to our servers. So we care about your privacy.
+
+Sarah will respond to your greetings, your love or even your personal questions about her.
+Just don't be rude ;)
+
+## Getting started
+Swtich to your project directory and run the following commands:
+
+```bash
+$ make
+$ make install
+$ export LD_LIBRARY_PATH=.
+$ export GI_TYPELIB_PATH=.
+$ ./sarah <some command to run>
+```
+
+## Some useful Sarah commands
+
+Get movie or TV-Show information:
+
+```bash
+$ sarah watch titanic
+Name : Titanic 
+Year of Releasing : 1997
+Movie or Series : movie
+Genre : Drama, Romance
+Cast : Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+Ok I will watch it because it got 7.7 on imdb
+```
 
 
-cd to your project directory and run the following:
-make
-make install
-export LD_LIBRARY_PATH=.
-export GI_TYPELIB_PATH=.
-./sarah <some command to run>
+Get the lyrics of a song:
 
-# Some useful Sarah commands with their outputs: <br />
+```bash
+$ sarah lyrics majerlazor leanon
+<<it will output the lyrics of Major Lazors song "Lean on">>
+```
 
-<b>Get movie or TV-Show information</b><br /><br />
-<code>sarah watch titanic</code><br /><br />
-<b>Output:</b><br /><br />
-Name : Titanic <br />
-Year of Releasing : 1997<br />
-Movie or Series : movie<br />
-Genre : Drama, Romance<br />
-Cast : Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates<br />
-Ok I will watch it because it got 7.7 on imdb <br /><br />
+Download file with resume-ability. Even if the link doesn't support resuming:
 
-<b>Get the lyrics of a song </b><br /><br />
-<code>sarah lyrics majerlazor leanon</code><br /><br />
-<b>Output: </b><br /><br />
-This command will output the lyrics of Major Lazors song "Lean on"<br /><br />
+```bash
+$ sarah download http://anylink.com/anyfile.tar.gz
+```
 
-<b>Download file with resume-ability. Even if the link doesn't support resuming :</b> <br /><br />
-<code>sarah download http://anylink.com/anyfile.tar.gz</code><br /><br />
+Grabbing the entire content of a website for offline use:
 
-<b>Grabbing the entire content of a website for offline use </b><br /><br />
-<code>sarah grab http://www.w3schools.com</code> <br /><br />
+```bash
+$ sarah grab http://www.w3schools.com
+```
 
-<b>Downloading Youtube video </b><br /><br />
-<code>sarah nzli https://www.youtube.com/watch?v=7XTHdcmjenI</code><br /><br />
+Downloading Youtube video:
 
-<b>Translate any English word to Arabic word </b><br /><br />
-<code>sarah translate pencil</code><br /><br />
-<b>Output:</b> <br /><br />
-قلم رصاص<br />
-<br />
-<b>Get small bio of anyone you want</b> <br /><br />
-<code>sarah whois Adam Levine</code><br /><br />
-<b>Output: </b><br /><br />
-Adam Noah Levine (born March 18, 1979) is an American singer-songwriter, multi-instrumentalist, and actor. <br />
-He is the lead vocalist for pop rock band Maroon 5.<br /><br />
-<b> Generate "Hello World"-program in any programming language </b><br /><br />
-<code>sarah first python</code><br /><br />
-<b>Output: </b><br /><br />
-.py File Created Successfully , Check your Current Path <br /><br />
-<b>Get the weather of a specific city </b><br /><br />
-<code>sarah weather khartoum</code><br /><br />
-<b>Output: </b><br /><br />
-displays the tempreature and weather information of Khartoum City <br /><br />
-<b>Test your internet connection speed </b><br /><br />
-<code>sarah speedtest</code><br /><br />
-<b>Get the number of characters in any file </b><br /><br />
-<code>sarah how many characters are in file.txt</code><br /><br />
-<b>Output: </b><br /><br />
-34 <br /><br />
+```bash
+$ sarah nzli https://www.youtube.com/watch?v=7XTHdcmjenI
+```
 
+Translate any English word to Arabic word:
+
+```bash
+$ sarah translate pencil
+قلم رصاص
+```
+
+Get small bio of anyone you want:
+
+```bash
+$ sarah whois Adam Levine
+Adam Noah Levine (born March 18, 1979) is an American singer-songwriter, multi-instrumentalist, and actor.
+He is the lead vocalist for pop rock band Maroon 5.
+```
+
+Generate "Hello World"-program in any programming language:
+
+```bash
+$ sarah first python
+
+.py File Created Successfully , Check your Current Path
+```
+
+Get the weather of a specific city:
+
+```bash
+$ sarah weather khartoum
+```
+
+Test your internet connection speed:
+
+```bash
+$ sarah speedtest
+```
+Get the number of characters in any file:
+
+```bash
+$ sarah how many characters are in file.txt
+34
+```
 
 # Installation
-Get all dependencies to run `Sarah` by executing <br />
+Get all dependencies to run `Sarah` by executing:
 
+```bash
+$ sudo add-apt-repository ppa:vala-team/ppa/
+$ sudo apt-get install software-properties-common
+$ sudo apt-get install valac 
+$ sudo apt-get install libpeas-dev
+$ sudo apt-get install python-pip
+$ pip install -r requirements.txt 
+```
 
+Enjoy your friendship with Sarah.
 
-<code> sudo add-apt-repository ppa:vala-team/ppa/ </code> <br />
-<code> sudo apt-get install software-properties-common </code> <br />
-<code> sudo apt-get install valac </code> <br />
-<code> sudo apt-get install libpeas-dev </code> <br />
-<code> $ sudo apt-get install python-pip </code> <br />
-<code> $ pip install -r requirements.txt </code>
+Made with &hearts; in Sudan.
 
-
-Enjoy your friendship with Sarah <br /><br />
-
-<b>Made with love in Sudan &hearts; </b><br /><br />
-
-SemiCode OS Core Team<br />
+SemiCode OS Core Team
