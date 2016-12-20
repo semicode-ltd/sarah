@@ -1,9 +1,20 @@
-# Sarah 
+
+
+
+# Sarah
 Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS. Sarah is your new girlfriend &hearts;<br />She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
 Sarah supports a large amount of commands. They can be listed with the following command:<br /><br />
 <code>sarah help</code><br /><br />
 Sarah uses only your username. She won't collect any personal information or send them to our servers. So we care about your privacy.<br />
 Sarah will respond to your greetings, your love or even your personal questions about her.<br /> Just don't be rude ;)
+
+
+cd to your project directory and run the following:
+make
+make install
+export LD_LIBRARY_PATH=.
+export GI_TYPELIB_PATH=.
+./sarah <some command to run>
 
 # Some useful Sarah commands with their outputs: <br />
 
@@ -59,7 +70,13 @@ displays the tempreature and weather information of Khartoum City <br /><br />
 
 # Installation
 Get all dependencies to run `Sarah` by executing <br />
- 
+
+
+
+<code> sudo add-apt-repository ppa:vala-team/ppa/ </code> <br />
+<code> sudo apt-get install software-properties-common </code> <br />
+<code> sudo apt-get install valac </code> <br />
+<code> sudo apt-get install libpeas-dev </code> <br />
 <code> $ sudo apt-get install python-pip </code> <br />
 <code> $ pip install -r requirements.txt </code>
 
