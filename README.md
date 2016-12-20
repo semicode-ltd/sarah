@@ -16,17 +16,6 @@ Sarah uses only your username. She won't collect any personal information or sen
 Sarah will respond to your greetings, your love or even your personal questions about her.
 Just don't be rude ;)
 
-## Getting started
-Swtich to your project directory and run the following commands:
-
-```bash
-$ make
-$ make install
-$ export LD_LIBRARY_PATH=.
-$ export GI_TYPELIB_PATH=.
-$ ./sarah <some command to run>
-```
-
 ## Some useful Sarah commands
 
 Get movie or TV-Show information:
@@ -118,6 +107,16 @@ $ sudo apt-get install valac
 $ sudo apt-get install libpeas-dev
 $ sudo apt-get install python-pip
 $ pip install -r requirements.txt 
+```
+## Getting started
+Swtich to your project directory and run the following commands:
+
+```bash
+$ make
+$ make install
+$ export LD_LIBRARY_PATH=.
+$ export GI_TYPELIB_PATH=.
+$ ./sarah <some command to run>
 ```
 
 Enjoy your friendship with Sarah.
