@@ -57,9 +57,9 @@ namespace Sarah
 		public Core ()
 		{
 			this.engine = Peas.Engine.get_default ();
-			this.engine.add_search_path ("./", null);
+			this.engine.add_search_path ("./plugins", "./plugins");
 			//this.engine.enable_loader ("python");
-			this.engine.enable_loader("python");
+			this.engine.enable_loader("python3");
 		}
 
 		public string [] list (bool active = false) {

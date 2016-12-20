@@ -1,6 +1,6 @@
 [Plugin]
 Module=hi
-Loader=python
+Loader=python3
 Name=hi
 Description=python hi plugins
 

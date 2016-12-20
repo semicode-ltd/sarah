@@ -1,0 +1,30 @@
+name: sarah
+version: master
+summary: Teminal Assistant
+description: |
+  Sarah is Your New Girl Friend ♥
+  She will take care of you  helps you in your work ,just open terminal from
+  any where and call her. She will be there for you.
+
+grade: devel
+confinement: strict
+
+apps:
+  sarah:
+    command: env LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SNAP/bin sarah
+    plugs: [network]
+
+parts:
+  requirements:
+    source: .
+    plugin: python
+    python-version: python2
+    requirements: requirements.txt
+  sarah:
+    source: .
+    plugin: make
+    build-packages: [valac, libpeas-dev]
+    after: [requirements]
+    # TODO remove make-parameters and artifacts when the plugins are fixed.
+    make-parameters: [sarahApp, sarahLib]
+    artifacts: [bin]
