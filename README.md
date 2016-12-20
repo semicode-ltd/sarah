@@ -9,14 +9,6 @@ Sarah uses only your username. She won't collect any personal information or sen
 Sarah will respond to your greetings, your love or even your personal questions about her.<br /> Just don't be rude ;)
 
 
-#Installing Sarah
-To install Sarah to ubuntu follow the commands below:
-
-sudo add-apt-repository ppa:vala-team/ppa
-sudo apt-get install software-properties-common
-sudo apt-get install valac
-sudo apt-get install libpeas-dev
-
 cd to your project directory and run the following:
 make
 make install
@@ -78,7 +70,13 @@ displays the tempreature and weather information of Khartoum City <br /><br />
 
 # Installation
 Get all dependencies to run `Sarah` by executing <br />
- 
+
+
+
+<code> sudo add-apt-repository ppa:vala-team/ppa/ </code> <br />
+<code> sudo apt-get install software-properties-common </code> <br />
+<code> sudo apt-get install valac </code> <br />
+<code> sudo apt-get install libpeas-dev </code> <br />
 <code> $ sudo apt-get install python-pip </code> <br />
 <code> $ pip install -r requirements.txt </code>
 
