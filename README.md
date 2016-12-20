@@ -1,4 +1,20 @@
-# Sarah 
+#Installing Sarah
+To install Sarah to ubuntu follow the commands below:
+
+sudo add-apt-repository ppa:vala-team/ppa
+sudo apt-get install software-properties-common
+sudo apt-get install valac
+sudo apt-get install libpeas-dev
+
+cd to your project directory and run the following:
+make
+make install
+export LD_LIBRARY_PATH=.
+export GI_TYPELIB_PATH=.
+./sarah <some command to run>
+
+
+# Sarah
 Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS. Sarah is your new girlfriend &hearts;<br />She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
 Sarah supports a large amount of commands. They can be listed with the following command:<br /><br />
 <code>sarah help</code><br /><br />
