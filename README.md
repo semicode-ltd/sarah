@@ -102,11 +102,11 @@ Get all dependencies to run `Sarah` by executing:
 
 ```bash
 $ sudo add-apt-repository ppa:vala-team/ppa/
-$ sudo apt-get install software-properties-common
+$ sudo apt-get install software-properties-common 
 $ sudo apt-get install valac 
-$ sudo apt-get install libpeas-dev
+$ sudo apt-get install libpeas-*
 $ sudo apt-get install python-pip
-$ pip install -r requirements.txt 
+$ sudo pip install -r requirements.txt 
 ```
 ## Getting started
 Swtich to your project directory and run the following commands:
