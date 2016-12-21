@@ -1,0 +1,5 @@
+[Plugin]
+Module=gtime
+Loader=python3
+Name=gtime
+Description=get the current time
