@@ -1,0 +1,5 @@
+[Plugin]
+Module=github
+Loader=python3
+Name=github
+Description=search on github
