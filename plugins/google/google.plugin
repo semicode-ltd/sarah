@@ -1,0 +1,5 @@
+[Plugin]
+Module=google
+Loader=python3
+Name=google
+Description=let sarah google something for you

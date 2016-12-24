@@ -1,0 +1,5 @@
+[Plugin]
+Module=youtube
+Loader=python3
+Name=youtube
+Description=let sarah search on youtube for you

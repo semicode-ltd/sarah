@@ -1,0 +1,5 @@
+[Plugin]
+Module=watch
+Loader=python3
+Name=watch
+Description=get information about a movie or a TV-show
