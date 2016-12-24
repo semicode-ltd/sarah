@@ -1,0 +1,5 @@
+[Plugin]
+Module=weather
+Loader=python3
+Name=weather
+Description=get the weather for specific city
