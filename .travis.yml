@@ -1,0 +1,15 @@
+language: c
+compiler: gcc
+before_install:
+  - sudo add-apt-repository ppa:vala-team/ppa -y
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq gnome-common libglib2.0-dev libgtk-3-dev libsqlite3-dev libvala-0.22-dev valac gobject-introspection software-properties-common  libpeas-* python-pip
+  - sudo pip install -r requirements.txt
+script:
+  - make 
+  - make install
+  - export LD_LIBRARY_PATH=.
+  - export GI_TYPELIB_PATH=.
+after_success:
+  - cd ./bin
+  - ./sarah list

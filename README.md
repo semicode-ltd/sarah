@@ -1,4 +1,4 @@
-# Sarah
+# Sarah [![Build Status](https://travis-ci.org/semicode-ltd/sarah.svg?branch=master)](https://travis-ci.org/semicode-ltd/sarah)
 
 Sarah is an English-like assistant that helps you with doing almost everything in SemiCode OS.
 
