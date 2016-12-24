@@ -1,0 +1,6 @@
+[Plugin]
+Module=whois
+Loader=python3
+Name=whois
+Description=get small bio about anyone you want
+
