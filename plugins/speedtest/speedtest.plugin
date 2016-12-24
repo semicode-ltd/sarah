@@ -1,0 +1,5 @@
+[Plugin]
+Module=speedtest
+Loader=python3
+Name=speedtest
+Description=measure your internet connection speed
