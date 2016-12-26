@@ -109,6 +109,8 @@ Prayer time for Algeria, Oran :
 
 
 ```
+# Roadmap
+- add autotools support
 
 # Installation
 Get all dependencies to run `Sarah` by executing:
