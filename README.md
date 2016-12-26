@@ -4,7 +4,7 @@ Sarah is an English-like assistant that helps you with doing almost everything i
 
 Sarah is your new girl friend &hearts;
 
-She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you. 
+She will take care of you and help you with your work. Just open a terminal anywhere you want, call her and she will be there for you.
 Sarah supports a large amount of commands. They can be listed with the following command:
 
 ```bash
@@ -22,7 +22,7 @@ Get movie or TV-Show information:
 
 ```bash
 $ sarah watch titanic
-Name : Titanic 
+Name : Titanic
 Year of Releasing : 1997
 Movie or Series : movie
 Genre : Drama, Romance
@@ -96,17 +96,30 @@ Get the number of characters in any file:
 $ sarah how many characters are in file.txt
 34
 ```
+Get Muslim prayer time **الأذان** (Muslim World League method)
+
+```bash
+$ sarah adhan oran Algeria
+Prayer time for Algeria, Oran :
+ Fajr 06:39
+ Dhuhr 13:03
+ Asr 15:38
+ Maghrib 17:56
+ Isha 19:22
+
+
+```
 
 # Installation
 Get all dependencies to run `Sarah` by executing:
 
 ```bash
 $ sudo add-apt-repository ppa:vala-team/ppa/
-$ sudo apt-get install software-properties-common 
-$ sudo apt-get install valac 
+$ sudo apt-get install software-properties-common
+$ sudo apt-get install valac
 $ sudo apt-get install libpeas-*
 $ sudo apt-get install python-pip
-$ sudo pip install -r requirements.txt 
+$ sudo pip install -r requirements.txt
 ```
 ## Getting started
 Swtich to your project directory and run the following commands:
