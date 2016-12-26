@@ -1,0 +1,5 @@
+[Plugin]
+Module=adhan
+Loader=python3
+Name=adhan
+Description=get the prayer time in a city
