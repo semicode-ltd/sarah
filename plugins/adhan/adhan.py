@@ -38,17 +38,19 @@ class AdhanPlugin(GObject.Object, Sarah.IExtension):
     object = GObject.property(type=GObject.Object)
 
     def do_activate(self, args, argv):
-            my_country = args[0].title()
-            my_city =   args[1].title()
+            try:
+                my_country = args[0].title()
+                my_city =   args[1].title()
+                adhan_times = requests.get("http://api.aladhan.com/timingsByCity?city="+my_city+"&country="+my_country+"&method=3").json()
+                print (" Prayer time for "+my_city+", "+my_country+" :\n",\
+                    " Fajr "+adhan_times['data']['timings']['Fajr']+"\n",\
+                    " Dhuhr "+adhan_times['data']['timings']['Dhuhr']+"\n",\
+                    " Asr "+adhan_times['data']['timings']['Asr']+"\n",\
+                    " Maghrib "+adhan_times['data']['timings']['Maghrib']+"\n",\
+                    " Isha "+adhan_times['data']['timings']['Isha']+"\n")
+            except Exception as e:
+                print("A error occured, please run sarah [city] [country]")
 
-            adhan_times = requests.get("http://api.aladhan.com/timingsByCity?city="+my_city+"&country="+my_country+"&method=3").json()
-
-            print (" Prayer time for "+my_city+", "+my_country+" :\n",\
-                " Fajr "+adhan_times['data']['timings']['Fajr']+"\n",\
-                " Dhuhr "+adhan_times['data']['timings']['Dhuhr']+"\n",\
-                " Asr "+adhan_times['data']['timings']['Asr']+"\n",\
-                " Maghrib "+adhan_times['data']['timings']['Maghrib']+"\n",\
-                " Isha "+adhan_times['data']['timings']['Isha']+"\n")
 
     def do_deactivate(self):
         pass
