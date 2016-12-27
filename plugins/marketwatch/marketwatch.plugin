@@ -1,0 +1,5 @@
+[Plugin]
+Module=marketwatch
+Loader=python3
+Name=marketwatch
+Description=let sarah get the market shares via marketwatch for you
