@@ -106,8 +106,10 @@ Prayer time for Algeria, Oran :
  Asr 15:38
  Maghrib 17:56
  Isha 19:22
-
-
+```
+Check the stock market : 
+```bash
+$ sarah marketwatch yamaha jp all
 ```
 # Roadmap
 - add autotools support
