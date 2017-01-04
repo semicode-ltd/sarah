@@ -11,7 +11,7 @@ confinement: strict
 
 apps:
   sarah:
-    command: env LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SNAP/bin sarah
+    command: env LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SNAP/bin GI_TYPELIB_PATH=$SNAP/bin sarah
     plugs: [network]
 
 parts:
@@ -25,6 +25,9 @@ parts:
     plugin: make
     build-packages: [valac, libpeas-dev]
     after: [requirements]
-    # TODO remove make-parameters and artifacts when the plugins are fixed.
-    make-parameters: [sarahApp, sarahLib]
     artifacts: [bin]
+  pluginsdir:
+    source: ./plugins
+    plugin: dump
+    organize:
+      ./*: bin/plugins/
