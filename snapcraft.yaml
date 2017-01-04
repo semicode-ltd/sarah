@@ -23,6 +23,7 @@ parts:
   sarah:
     source: .
     plugin: make
+    disable-parallel: true
     build-packages: [valac, libpeas-dev]
     after: [requirements]
     artifacts: [bin]
@@ -30,4 +31,4 @@ parts:
     source: ./plugins
     plugin: dump
     organize:
-      ./*: bin/plugins/
+      ./*: bin/plugins
