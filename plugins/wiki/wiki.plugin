@@ -2,5 +2,5 @@
 Module=wiki
 Loader=python3
 Name=wiki
-Description=get small bio about anyone you want
+Description=get a short summary of german wikipedia
 
