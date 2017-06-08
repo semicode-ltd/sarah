@@ -1,0 +1,6 @@
+[Plugin]
+Module=wiki
+Loader=python3
+Name=wiki
+Description=get small bio about anyone you want
+
