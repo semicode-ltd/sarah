@@ -8,7 +8,7 @@ She will take care of you and help you with your work. Just open a terminal anyw
 Sarah supports a large amount of commands. They can be listed with the following command:
 
 ```bash
-$ sarah help
+$ sarah list
 ```
 
 Sarah uses only your username. She won't collect any personal information or send them to our servers. So we care about your privacy.
