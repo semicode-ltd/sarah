@@ -1,0 +1,6 @@
+[Plugin]
+Module=wiki
+Loader=python3
+Name=wiki
+Description=get a short summary of german wikipedia
+
